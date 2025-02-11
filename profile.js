@@ -9,7 +9,7 @@ if (window.location.pathname.endsWith('index.html')) {
 
         // Validate password and confirm password
         if (password !== confirmPassword) {
-            alert('Passwords do not match');
+            alert('Error Passwords');
             return;
         }
 
@@ -20,7 +20,7 @@ if (window.location.pathname.endsWith('index.html')) {
         };
 
         localStorage.setItem('user', JSON.stringify(user));
-        alert('Registration successful! Please login.');
+        alert('Registration successful!');
         window.location.href = 'login.html';
     });
 }
@@ -38,7 +38,7 @@ if (window.location.pathname.endsWith('login.html')) {
             alert('Login successful!');
             window.location.href = 'profile.html';
         } else {
-            alert('Invalid credentials');
+            alert('Invalid');
         }
     });
 }
